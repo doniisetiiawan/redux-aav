@@ -6,7 +6,7 @@ import NotFoundPage from '../NotFoundPage';
 import ContactPage from '../ContactPage';
 import AboutPage from '../AboutPage';
 import HomePage from '../HomePage';
-import Login from '../Login';
+import LoginPage from '../LoginPage';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
@@ -27,7 +27,7 @@ const App = () => (
     <Header />
     <Switch>
       <Route exact path="/" component={HomePage} />
-      <Route exact path="/login" component={Login} />
+      <Route exact path="/login" component={LoginPage} />
       <Route exact path="/about" component={AboutPage} />
       <Route exact path="/contact" component={ContactPage} />
       <Route path="" component={NotFoundPage} />
