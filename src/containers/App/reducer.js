@@ -25,7 +25,9 @@ function appReducer(state = initialState, action) {
     }
 
     case LOGIN_SUCCESS:
-      Cookie.set('token', action.user.token, { expires: 7 });
+      Cookie.set(
+        'token', action.user.token, { expires: 7 },
+      );
       return state.set(
         'loading', true,
       ).set('currentUser', fromJS(action.user));

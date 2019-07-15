@@ -7,6 +7,7 @@ import ContactPage from '../ContactPage';
 import AboutPage from '../AboutPage';
 import HomePage from '../HomePage';
 import LoginPage from '../LoginPage';
+import RegisterPage from '../RegisterPage';
 import Header from '../../components/Header';
 import Footer from '../../components/Footer';
 
@@ -28,6 +29,7 @@ const App = () => (
     <Switch>
       <Route exact path="/" component={HomePage} />
       <Route exact path="/login" component={LoginPage} />
+      <Route exact path="/register" component={RegisterPage} />
       <Route exact path="/about" component={AboutPage} />
       <Route exact path="/contact" component={ContactPage} />
       <Route path="" component={NotFoundPage} />
